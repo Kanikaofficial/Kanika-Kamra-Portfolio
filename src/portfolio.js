@@ -81,7 +81,7 @@ const competitiveSites = {
 const skills = {
   data: [
     {
-      title: "Data Science & Analysis",
+      title: "Data Science",
       fileName: "DataScienceImg",
       skills: [
         "⚡ Developing highly scalable production-ready models for various deep learning and statistical use cases",
