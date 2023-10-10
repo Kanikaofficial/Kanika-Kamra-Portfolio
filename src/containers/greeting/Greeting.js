@@ -20,22 +20,30 @@ export default function Greeting(props) {
                 {greeting.title}
               </h1>
               <h1 className="greeting-sub" style={{ color: theme.grayText }}>
-                I'm <mark data-entity="person">{greeting.sub}</mark>
+                I'm <mark data-entity="">{greeting.sub}</mark>
               </h1>
+              <h1 style={{ fontSize: "x-larger" }}>I am professional in </h1>
+              <br />
               <h1 className="greeting-typewriter" style={{ color: theme.blue }}>
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString("Data Scientist(NLP)")
+                      .typeString("Statistical Analysis")
                       .pauseFor(200)
                       .deleteAll()
-                      .typeString("Web Developer")
+                      .typeString("Data Manipulation")
                       .pauseFor(200)
                       .deleteAll()
-                      .typeString("UI/UX Designer")
+                      .typeString("Data Visualization")
                       .pauseFor(200)
                       .deleteAll()
-                      .typeString("IT Engineer")
+                      .typeString("Database Management")
+                      .pauseFor(200)
+                      .deleteAll()
+                      .typeString("Programming")
+                      .pauseFor(200)
+                      .deleteAll()
+                      .typeString("Machine Learning")
                       .pauseFor(200)
                       .start();
                   }}
@@ -50,12 +58,13 @@ export default function Greeting(props) {
                 style={{ color: theme.text }}
               >
                 <div className="entities">
-                  A <mark data-entity="noun">Data Science practitioner</mark>{" "}
-                  who thrives to{" "}
-                  <mark data-entity="verb">leverage Startups</mark> using
-                  AI-based solutions along with{" "}
-                  <mark data-entity="skill">Web Development</mark> and a blend
-                  of <mark data-entity="freelance">UI/UX Designing</mark>
+                  A <mark data-entity="">Data Analyst</mark>
+                  with a passion for
+                  <mark data-entity="">uncovering insights</mark> through data
+                  analysis, skilled in
+                  <mark data-entity="">data manipulation</mark>, and dedicated
+                  to
+                  <mark data-entity="">delivering actionable results</mark>.
                 </div>
               </span>
               <CompetitiveSites logos={competitiveSites.competitiveSites} />

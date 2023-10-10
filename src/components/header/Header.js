@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import singature from "./signature.png";
 // import { Navbar } from "react-bootstrap";
 import logo from "../../assets/logo/logo-01.png";
 const onMouseEnter = (event, color) => {
@@ -26,7 +27,13 @@ class Header extends Component {
         <div>
           <header className="header" fixed="top">
             <NavLink to={link} tag={Link} className="logo">
-              <img className="logo_header" src={logo} alt="logo" />
+              <img
+                className="logo_header"
+                src={singature}
+                width={"600px"}
+                height={"200px"}
+                alt="logo"
+              />
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">

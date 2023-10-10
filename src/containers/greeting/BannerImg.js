@@ -1,5 +1,6 @@
 import lottie from "lottie-web";
 import React, { useRef, useEffect } from "react";
+import img from "./woman-doing.png";
 // import { Component } from "react";
 // import banner from "./greeting-01.svg"
 
@@ -17,7 +18,8 @@ export default function BannerImg() {
   }, []);
   return (
     <div className="App">
-      <div className="container" ref={container}></div>
+      {/* <div className="container" ref={container}></div> */}
+      <img src={img} alt="svg image" width={"100%"} />
     </div>
   );
 }
